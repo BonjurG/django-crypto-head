@@ -1,0 +1,41 @@
+
+{% extends "about_crypto/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="row justify-content-center my-3">
+  <div class="col-7">
+    <img src="{% static 'about_crypto/dats.png' %}" class="img-fluid">
+  </div>
+</div>
+
+<div class="row justify-content-center mb-5">
+  <div class="col-md-8 text-center">
+    <h1 >Welcome to the "crypto-head" here I talk about cryptocurrency</h1>
+  </div>
+</div>
+
+<h3 class="mt-5">The most interesting cryptocurrencies:</h3>
+<hr>
+<div class="row">
+  {% for project in projects %}
+  <div class="col-lg-3 col-md-1">
+
+    {% if project.url %}
+    <a href="{{ project.url }}" target="_blank">
+      <img src="{{ project.image.url }}" class="img-fluid mb-2">
+    </a>
+    {% else %}
+
+    <img src="{{ project.image.url }}" class="img-fluid mb-3">
+    {% endif %}
+    <h4>{{ project.title }}</h4>
+    <p>{{ project.description }}</p>
+
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
