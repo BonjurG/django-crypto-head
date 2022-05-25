@@ -7,10 +7,12 @@
 }
 
 
-body {
 
-    font-family: 'Lato', sans-serif;
-}
+
+.col-md-8 { font-family: 'Anton';}
+.mt-5 { font-family: 'Anton';}
+
+
 
 #blogtitle {
     font-size: 6rem;
@@ -24,6 +26,3 @@ body {
         font-size: 5rem;
     }
 }
-
-.col-md-8 { font-family: 'Anton';}
-.mt-5 { font-family: 'Anton';}
