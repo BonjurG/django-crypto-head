@@ -1,5 +1,7 @@
 ###  Сайт-блог на Django
 
+[Site link](https://bonjurg.pythonanywhere.com)
+
 
 **Для правильной работы приложения:**
 
